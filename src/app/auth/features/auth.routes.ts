@@ -9,9 +9,5 @@ export default[
     {
         path: 'sing-up',
         loadComponent: ()=>import('./sing-up/sing-up.component')
-    },
-    {
-        path: 'zodiaco',
-        loadComponent: ()=>import('../../formulario/zodiaco/zodiaco.component')
     }
 ] as Routes

@@ -8,33 +8,47 @@
             </div>
             <div class="grid grid-cols-2 gap-4">
                 <label for="Aparterno">A Paterno</label>
-                <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-700 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"  formControlName="Aparterno">
+                <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-700 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"  formControlName="aPaterno">
             </div>
             <div class="grid grid-cols-2 gap-4">
                 <label for="Amaterno">A Materno</label>
-                <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-700 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" formControlName="Amaterno">
+                <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-700 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" formControlName="aMaterno">
             </div>
             <div class="grid-cols-1">
                 <h3>Fecha de nacimeinto</h3>
-                <div class="grid-cols-3">
-
+                <div class="grid grid-cols-3 gap-4">
+                    <div>
+                        <label for="dia">Día</label>
+                        <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-700 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" formControlName="dia">
+                    </div>
+                    <div>
+                        <label for="dia">Mes</label>
+                        <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-700 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" formControlName="mes">
+                    </div>
+                    <div>
+                        <label for="dia">Año</label>
+                        <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-700 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" formControlName="anio">
+                    </div>
                 </div>
             </div>
             <div class="grid-cols-1">
                 <h3>Sexo</h3>
                 <div>
-                    <input type="radio" name="sexo" formControlName="sexo">
+                    <input type="radio" name="sexo" value="0" formControlName="sexo">
                     <label for="sexo">Mujer</label>
                 </div>
                 <div>
-                    <input type="radio" name="sexo" formControlName="sexo">
+                    <input type="radio" name="sexo" value="1" formControlName="sexo">
                     <label for="sexo">Hombre</label>
                 </div>
             </div>
             <button type="submit" class="bg-blue-800 border-black border text-white px-5 py-2">Imprimir</button>
         </form>
     </div>
-    <div class="grid grid-cols-1 gap-4">
-        {{}}
+    <div class="grid grid-cols-1 gap-4 h-min">
+        <p class="h-min">{{Unombre}}</p>
+        <p class="h-min">{{Uedad}}</p>
+        <p class="h-min">{{Uzodiacal}}</p>
+        <img [src]="Uimagen" alt="{{Uzodiacal}}" class="h-24">
     </div>
 </div>
